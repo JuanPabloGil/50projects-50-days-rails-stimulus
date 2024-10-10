@@ -1,0 +1,47 @@
+<div class="w-full">
+  <%= link_to 'Back to home', root_path, class: 'bg-orange-600 p-2 rounded text-xs text-white hover:bg-orange-700' %>
+</div>
+
+<div class="p1-container" data-controller="project1">
+  <div class="panel active" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 1</h3>
+  </div>
+  
+  <div class="panel" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 2</h3>
+  </div>
+  
+  <div class="panel" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 3</h3>
+  </div>
+  
+  <div class="panel" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 4</h3>
+  </div>
+  
+  <div class="panel" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 5</h3>
+  </div>
+  
+  <div class="panel" 
+       data-project1-target="image" 
+       data-action="click->project1#click" 
+       style="background-image: url('<%= asset_url('example-image-1.jpg') %>')">
+    <h3>Image 6</h3>
+  </div>
+</div>
