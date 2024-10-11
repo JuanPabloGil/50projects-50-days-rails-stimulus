@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ['circle', 'prevButton', 'nextButton', 'progress']
+  static targets = ['circle', 'prevButton', 'nextButton', 'progress', 'view']
 
   connect() {
     this.counter = 1;
@@ -13,6 +13,7 @@ export default class extends Controller {
     this.handleProgressBar()
     this.toggleNextButton()
     this.togglePrevButton()
+    this.handleView()
   }
 
   handlePrev() {
@@ -20,6 +21,7 @@ export default class extends Controller {
     this.handleProgressBar()
     this.toggleNextButton()
     this.togglePrevButton()
+    this.handleView()
   }
 
   toggleNextButton() {
@@ -46,6 +48,16 @@ export default class extends Controller {
         this.progressTarget.style.width = (((this.counter - 1) / (this.maxBound - 1)) * 100) + '%'
       } else {
         element.classList.remove('active')
+      }
+    });
+  }
+
+  handleView() {
+    this.viewTargets.forEach((element, index) => {
+      if (this.counter === index + 1) {
+        element.classList.remove('hidden')
+      } else {
+        element.classList.add('hidden')
       }
     });
   }

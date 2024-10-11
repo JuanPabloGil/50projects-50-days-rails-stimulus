@@ -2,7 +2,33 @@
   <%= link_to 'Back to home', root_path, class: 'bg-orange-600 p-2 rounded text-xs text-white hover:bg-orange-700'%>
 </div>
 <div class='p2-container' data-controller='project2'>
-  <div class='progress-container'>
+  <div class='step-view'>
+    <div data-project2-target='view' class=''>
+      <h1>Step 1</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+    <div data-project2-target='view' class='hidden'>
+      <h1>Step 2</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+    <div data-project2-target='view' class='hidden'>
+      <h1>Step 3</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+    <div data-project2-target='view' class='hidden'>
+      <h1>Step 4</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+    <div data-project2-target='view' class='hidden'>
+      <h1>Step 5</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+    <div data-project2-target='view' class='hidden'>
+      <h1>Step 6</h1>
+      <div class='h-[200px] w-[200px] bg-gray-500'></div>
+    </div>
+  </div>
+  <div class='progress-container mt-5'>
     <div class='progress' data-project2-target='progress'></div>
     <div class='active circle' data-project2-target='circle'> 1 </div>
     <div class='circle' data-project2-target='circle'> 2 </div>
