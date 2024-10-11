@@ -89,3 +89,19 @@
   background-color: var(--secondary-color);
   cursor: not-allowed;
 }
+
+.view-box {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color: var(--primary-color);
+}
+
+.view-box-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
